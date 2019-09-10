@@ -9,7 +9,7 @@ class Status extends Component {
   render() {
     const {message, show} = this.props;
     return (
-      <div className={"status rounded px-2 py-4 " + (show ? "" : "disable")}>
+      <div className={"status rounded px-2 py-4" + (show ? "" : " disable")  + (show ? "" : " invisible")}>
         <div className="message row">
           <div className="col-1">
             <img src={status} alt="status"/>

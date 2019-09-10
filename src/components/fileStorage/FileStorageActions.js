@@ -43,9 +43,15 @@ export async function upload(fileName, fileData){
 }
 
 //Depreciated after version 0.2.2
-export async function getFiles(){
+/*export async function getFiles(){
   let {account, filestorage} = store.getState().web3;
   let files = await filestorage.listDirectory(account);
+  store.dispatch(updateFiles(files));
+}*/
+
+export async function getFiles(){
+  let {account, filestorage, web3Instance} = store.getState().web3;
+  let files = await filestorage.listDirectory(web3Instance.utils.stripHexPrefix(account));
   store.dispatch(updateFiles(files));
 }
 

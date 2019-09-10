@@ -1,6 +1,10 @@
 /* PAGE */
 
-body {
+img.logo {
+  max-width: 120px;
+}
+
+/* body {
   font-family: 'Space Mono', monospace;
   color: #ffffff;
   background-color: #000000;
@@ -171,11 +175,11 @@ input {
 
 .pure-form input[type="text"]:focus {
   border-color: #0c1a2b;
-}
+} */
 
 /* NAVBAR */
 
-.navbar {
+/* .navbar {
   background: #1a1a1a;
   font-size: 14px;
   font-weight: 600;
@@ -246,7 +250,7 @@ input {
 
 .disable {
     display: none;
-  }
+  } */
 
 
 

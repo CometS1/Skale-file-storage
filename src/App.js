@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
+import { Button, Container } from 'react-bootstrap'
+import 'bootstrap';
 import { getWeb3 } from './reducers/web3/getWeb3'
 import { getFiles } from './components/fileStorage/FileStorageActions'
 
@@ -23,12 +25,12 @@ getWeb3
 class App extends Component {
   render() {
     return (
-      <div className="App" style={{backgroundImage: 'url(' + bg + ')'}}>
+      <div className="App">
         <div className="content">
-        <div className="header">
+        <div className="header bg-primary">
           <nav className="navbar navbar-expand-lg navbar-dark">
             <Link to="/" className="navbar-brand">
-              <img className="logo" alt="SKALE" src={skale_logo}/>
+              <img className="logo img-fluid" alt="SKALE" src={skale_logo}/>
             </Link>
           </nav>
         </div>

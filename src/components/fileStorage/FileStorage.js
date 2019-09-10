@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { Button, Container } from 'react-bootstrap'
+import 'bootstrap';
 import {formatBytes} from './../../utils/utils'
 import './styles.scss';
 import image from './../../assets/placeholder-image.png'
@@ -26,17 +28,16 @@ class FileStorage extends Component {
             <div key={index} className="card col-12 border-top">
               <div className="card-body d-flex">
               <div className="image-container border-right center">
-                <button className="ml-3 btn btn-outline-primary clear-button"
-                onClick={(event) => this.props.onPreDownload(event, account.slice(2) + "/" + item.name, index)}>
-                  <img className="" id={"image_" + index} src={item.name.match(/\.(gif|jpe?g|png)$/i) ? image : file} alt={item.name}/>
-                </button>
+                <Button className="ml-3 btn btn-outline-primary clear-button" onClick={(event) => this.props.onPreDownload(event, account.slice(2) + "/" + item.name, index)}>
+                <img className="" id={"image_" + index} src={item.name.match(/\.(gif|jpe?g|png)$/i) ? image : file} alt={item.name}/>
+                </Button>
               </div>
-              <button className="ml-3 btn btn-outline-primary clear-button"
+              <Button className="ml-3 btn btn-outline-primary clear-button"
               onClick={(event) => this.props.onDownload(event, account.slice(2) + "/" + item.name, index)}>
                 <h5 className="justify-content-end">{item.name} | {formatBytes(item.size)}</h5>
-              </button>
-              <div className="ml-auto justify-content-end"><button className="btn btn-outline-primary yellow-button"
-              onClick={(event) => this.props.onDelete(event, account, item.name)}>Delete</button></div>
+              </Button>
+              <div className="ml-auto justify-content-end"><Button className="btn btn-outline-primary yellow-button"
+              onClick={(event) => this.props.onDelete(event, account, item.name)}>Delete</Button></div>
               </div>
             </div>
             ))}
