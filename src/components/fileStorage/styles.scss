@@ -1,4 +1,10 @@
 .filestorage {
+  img {
+    max-height: 50px;
+  }
+}
+
+/* .filestorage {
   .image-container {
     width: 200px;
   }
@@ -16,7 +22,6 @@
   .fileUpload + label {
     max-width: 80%;
     font-size: 1.25rem;
-    /* 20px */
     font-weight: 700;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -24,12 +29,9 @@
     display: inline;
     overflow: hidden;
     padding: 0.625rem 1.25rem;
-    /* 10px 20px */
   }
 
   .fileUpload + label * {
-      /* pointer-events: none; */
-      /* in case of FastClick lib use */
   }
 
   .fileUpload + label svg {
@@ -38,9 +40,7 @@
       vertical-align: middle;
       fill: currentColor;
       margin-top: -0.25em;
-      /* 4px */
       margin-right: 0.25em;
-      /* 4px */
   }
 
   .fileUpload + label {
@@ -52,4 +52,4 @@
   .fileUpload + label:hover {
       color: #d9e021;
   }
-}
+} */

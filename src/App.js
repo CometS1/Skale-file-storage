@@ -1,13 +1,11 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
-import { Button, Container } from 'react-bootstrap'
 import 'bootstrap';
 import { getWeb3 } from './reducers/web3/getWeb3'
 import { getFiles } from './components/fileStorage/FileStorageActions'
 
 // Images
 import skale_logo from './assets/Skale_Logo_White.png'
-import bg from './assets/demo-background.png'
 
 // Styles
 import './App.scss'
