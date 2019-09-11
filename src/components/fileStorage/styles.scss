@@ -3,57 +3,7 @@
     max-height: 50px;
   }
 
-  .fileUpload + label {
+  label:hover {
     cursor: pointer;
   }
 }
-
-/* .filestorage {
-  .image-container {
-    width: 200px;
-  }
-  img {
-    height: 50px;
-  }
-  .fileUpload {
-    width: 0.1px;
-    height: 0.1px;
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    z-index: -1;
-  }
-  .fileUpload + label {
-    max-width: 80%;
-    font-size: 1.25rem;
-    font-weight: 700;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    cursor: pointer;
-    display: inline;
-    overflow: hidden;
-    padding: 0.625rem 1.25rem;
-  }
-
-  .fileUpload + label * {
-  }
-
-  .fileUpload + label svg {
-      width: 1em;
-      height: 1em;
-      vertical-align: middle;
-      fill: currentColor;
-      margin-top: -0.25em;
-      margin-right: 0.25em;
-  }
-
-  .fileUpload + label {
-    color: #d9e021;
-  }
-
-  .fileUpload:focus + label,
-  .fileUpload.has-focus + label,
-  .fileUpload + label:hover {
-      color: #d9e021;
-  }
-} */
