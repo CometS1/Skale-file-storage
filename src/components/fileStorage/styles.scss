@@ -2,6 +2,10 @@
   img {
     max-height: 50px;
   }
+
+  .fileUpload + label {
+    cursor: pointer;
+  }
 }
 
 /* .filestorage {
