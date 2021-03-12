@@ -48,7 +48,7 @@
     "promise": "7.1.1",
     "react": "^15.4.2",
     "react-bootstrap": "^0.31.3",
-    "react-dev-utils": "^9.0.0-next.b0cbf2ca",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.2",
     "react-router": "^3.0.2",
